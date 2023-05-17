@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Heebo&display=swap');
+
+/*-------------------------------------------------------------------------*/
+/* Main CSS */
+html {
+	background: #ffffff;
+}
+
+
+.container_main {
+	/* border: 1px solid #000000; */
+	text-align: center;
+	white-space: normal;
+	color: #000000;
+	display: grid;
+	place-items: center;
+}
+
+
+.logo {
+	height: 120px;
+	width: 120px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.description_bot_container {
+	padding: 5px 10px;
+	border-radius: 2px;
+}
+
+
+.description {
+	margin: 20px;
+	font-family: 'Heebo', sans-serif;
+	text-align: justify;
+}
+
+
+strong {
+	color: #163bff;
+}
+
+
+.advantages_bot {
+	font-family: 'Heebo', sans-serif;
+	text-align: left;
+}
+
+
+.advantages_title {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans";
+	font-size: 1.5em;
+}
+
+
+.advantages_list {
+	padding: 20px;
+}
+
+
+.bullet {
+	margin-left: 0;
+	list-style: none;
+	counter-reset: li;
+	padding: 0;
+}
+
+
+.bullet li {
+	position: relative;
+	margin-bottom: 1.5em;
+	border: 3px solid #163bff;
+	padding: 0.6em;
+	border-radius: 4px;
+	background: #ffffff;
+	color: #000000;
+	font-family: "Trebuchet MS", "Lucida Sans";
+}
+
+
+.bullet li:before {
+	position: absolute;
+	top: -0.7em;
+	/* padding-left: 0.4em;
+	padding-right: 0.4em; */
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	background: #ffffff;
+	border-radius: 50%;
+	counter-increment: li;
+	content: counter(li);
+}
+
+
+.contacts_title {
+	font-size: 1.5em;
+	font-family: "Trebuchet MS", "Lucida Sans";
+	color: #163bff
+}
+/*-------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+/* Typewriter -> CVE Crawler Bot */
+.title_bot {
+	width: 16ch;
+	animation: typing 2s steps(16), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: "Trebuchet MS", "Lucida Sans";
+	font-size: 1.5em;
+	color: #163bff;
+	margin-top: 15px;
+}
+
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+    
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+/*-------------------------------------------------------------------------*/
