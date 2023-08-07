@@ -18,7 +18,9 @@
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
     </script>
-
+    <script>
+        alert(window.Telegram.WebApp.initDataUnsafe.user);
+    </script>
         <style>
         body {
             background-color: white;
