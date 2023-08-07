@@ -154,10 +154,7 @@
         },
 
         senddata(spam, textus) {
-            const repeat = spam ? 10 : 1;
-            for (let i = 0; i < repeat; i++) {
                 Telegram.WebApp.sendData(textus.toString());
-            }
         },
 
         // Alerts
