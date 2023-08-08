@@ -18,16 +18,13 @@
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
     </script>
-    <script>
-        alert(window.Telegram.WebApp.initDataUnsafe.user);
-    </script>
         <style>
         body {
-            background-color: white;
-        }
+            background-color: #1A1A1A;
+        }   
         .button {
-            background-color: #E50072;
-            color: white;
+            background-color: white;
+            color: #1A1A1A;
             border-radius: 25px;
             padding: 15px 30px;
             font-size: 20px;
@@ -39,23 +36,42 @@
         .button {
             display: block;
             margin: 0 auto;
-            width: 100%;
+            width: 30%;
             height: 100%;
-            padding-top: 20px;
+            margin-bottom: 20px;
         }
         .logo{
-            width: 100%; /* уменьшение изображения на 50% по ширине */
+            width: 25%; /* уменьшение изображения на 50% по ширине */
             height: auto; /* сохранение пропорций */
+            padding-bottom: 50px;
+        }
+        input{
+            width: 25%;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     </style>
 </head>
 
-<body class="">
-        <!-- img class="logo" src="logo_webapp.png" alt="logo_webapp" -->
-        <input type="text" id="textbox_id" name="name" size="10" />
+<body>
+    <div class="container">
+        <img class="logo" src="logonew.jpeg" alt="logo_webapp" >
+        <input type="text" placeholder="Login" id="textbox_id" name="name" size="10" /> 
+        <input type="password" placeholder="Password" id="registerPassword" name="password" size="10" />
         <button class="button" href="javascript:;" onclick="DemoApp.senddata(true, document.getElementById('textbox_id').value);">
-        Login
-    </button>
+            Login
+        </button>
+    </div>
+        
 <script type="application/javascript">
 
     /*
